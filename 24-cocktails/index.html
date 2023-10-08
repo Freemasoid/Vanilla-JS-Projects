@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cocktails</title>
+
+    <!-- stop fckn favicon requests -->
+    <link rel="icon" href="data:," />
+
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -14,7 +18,24 @@
   </head>
 
   <body>
-    <h1>drinks page</h1>
+    <form class="search-form">
+      <h2>Cocktails API</h2>
+      <input type="text" placeholder="search for your favorite cocktail" name="drink" />
+    </form>
+    <section class="section cocktails">
+      <article class="loading hide-loading">
+        <img src="./loading.gif" alt="loading " />
+      </article>
+      <h2 class="title"></h2>
+      <div class="section-center">
+        <a href="drink.html">
+          <article class="cocktail" data-d="1">
+            <img src="./cocktail.jpg" alt="cocktail" />
+            <h3>martini</h3>
+          </article>
+        </a>
+      </div>
+    </section>
     <script type="module" src="./app.js"></script>
   </body>
 </html>
