@@ -568,9 +568,11 @@ product
 }
 .product-icon:hover {
   background: var(--clr-primary-7);
+  border: 2px solid #fff;
 }
 
 .product-container:hover .img {
+  transition: var(--transition);
   filter: grayscale(90%);
 }
 
