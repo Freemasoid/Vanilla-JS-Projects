@@ -18,12 +18,12 @@ const setupPrice = (store) => {
     const value = parseInt(priceInput.value);
     priceValue.textContent = `Value: $${value}`;
     let newStore = store.filter((product) => product.price / 100 <= value);
-    display(newStore, getElement(".products-container"));
+    display(newStore, getElement(".products-container"), true);
     if (newStore.length < 1) {
       const products = getElement(".products-container");
       products.innerHTML = `<h3 class="filter-error">No products are matching your search</h3>`;
     } else {
-      display(store, getElement(".products-container"));
+      display(store, getElement(".products-container"), true);
     }
   });
 };
